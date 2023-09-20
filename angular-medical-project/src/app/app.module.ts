@@ -7,12 +7,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { UserRequestFormComponent } from './user-request-form/user-request-form.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
+import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    UserRequestFormComponent
+    UserRequestFormComponent,
+    AddDoctorComponent
   ],
   imports: [
     BrowserModule,
