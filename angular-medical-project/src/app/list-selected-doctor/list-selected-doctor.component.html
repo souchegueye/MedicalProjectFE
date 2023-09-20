@@ -1,0 +1,22 @@
+<div class="container text-center">
+   
+    <div class="card text-center my-3" style="width: 28rem;">
+        
+        <div class="card-body">
+          <h5 class="card-title"><b>Name: </b> {{selectedDoctor.name}}</h5>
+        </div>
+        
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><b>Specialization: </b>{{selectedDoctor.specialization}}</li>
+          <li class="list-group-item"><b>Fee: </b>{{selectedDoctor.fee}}</li>
+          <li class="list-group-item"><b>Experience: </b>{{selectedDoctor.experience}}</li>
+          <li class="list-group-item"><b>Gender: </b>{{selectedDoctor.gender}}</li>
+          <li class="list-group-item"><b>Available From: </b>{{selectedDoctor.availableFrom}}</li>
+          <li class="list-group-item"><b>Available To: </b>{{selectedDoctor.availableTo}}</li>
+         </ul>
+        <div class="card-body">
+            
+          <button class="btn btn-primary m-3" *ngFor="let time of timeStamps|slice:timeStampStart:timeStampend">{{time}}</button>
+        </div>
+      </div>
+    </div>

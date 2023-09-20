@@ -1,0 +1,22 @@
+<div class="container text-center">
+<div *ngFor="let doctor of listSelectedDoctors" > 
+<div class="card text-center my-3" style="width: 28rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title"><b>Name: </b> {{doctor.name}}</h5>
+    </div>
+    
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Specialization: </b>{{doctor.specialization}}</li>
+      <li class="list-group-item"><b>Fee: </b>{{doctor.fee}}</li>
+      <li class="list-group-item"><b>Experience: </b>{{doctor.experience}}</li>
+      <li class="list-group-item"><b>Gender: </b>{{doctor.gender}}</li>
+      <li class="list-group-item"><b>Available From: </b>{{doctor.availableFrom}}</li>
+      <li class="list-group-item"><b>Available To: </b>{{doctor.availableTo}}</li>
+     </ul>
+    <div class="card-body">
+      <button class="btn btn-primary" (click)="selectedDoctor(doctor)">Select this Doctor</button>
+    </div>
+  </div>
+</div>
+</div>
