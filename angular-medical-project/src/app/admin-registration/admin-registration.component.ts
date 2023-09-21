@@ -1,7 +1,6 @@
-// admin-registration.component.ts
 import { Component } from '@angular/core';
 import { AdminService } from '../admin.service';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin-registration',
@@ -11,19 +10,25 @@ import { AdminService } from '../admin.service';
 export class AdminRegistrationComponent {
   username: string = '';
   password: string = '';
+  successMessage: string = ''; // Define successMessage property
+  errorMessage: string = ''; // Define errorMessage property
 
-  constructor(private adminService: AdminService) {}
+  constructor(private adminService: AdminService, private router: Router) {}
 
   registerAdmin() {
     this.adminService.register(this.username, this.password).subscribe(
-      (response: any) => {
-        console.log('Admin registered successfully', response);
-        
+      (message: string) => {
+        console.log(message);
+        this.successMessage = message;
       },
       (error: any) => {
-        console.error('Registration failed', error);
-        
+        console.error(error);
+        this.errorMessage = error;
       }
     );
+  }
+
+  goToHomePage() {
+    this.router.navigate(['/']);
   }
 }

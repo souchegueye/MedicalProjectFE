@@ -10,10 +10,8 @@ import { HttpClientModule} from '@angular/common/http';
 import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { ViewOrderComponent } from './view-order/view-order.component';
-import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
-import { DeleteDoctorComponent } from './delete-doctor/delete-doctor.component';
-import { OrderDetailsComponent } from './order-details/order-details.component';
+import { AdminLandingPageComponent } from './admin-landing-page/admin-landing-page.component';
+
 
 @NgModule({
   declarations: [
@@ -23,10 +21,8 @@ import { OrderDetailsComponent } from './order-details/order-details.component';
     AddDoctorComponent,
     AdminRegistrationComponent,
     AdminLoginComponent,
-    ViewOrderComponent,
-    UpdateDoctorComponent,
-    DeleteDoctorComponent,
-    OrderDetailsComponent
+    AdminLandingPageComponent,
+   
   ],
   imports: [
     BrowserModule,

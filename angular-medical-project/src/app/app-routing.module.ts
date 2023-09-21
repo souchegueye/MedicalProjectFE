@@ -1,26 +1,24 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddDoctorComponent } from './add-doctor/add-doctor.component';
+import { AdminLandingPageComponent } from './admin-landing-page/admin-landing-page.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
-import { DeleteDoctorComponent } from './delete-doctor/delete-doctor.component';
+
 import { HomePageComponent } from './home-page/home-page.component';
-import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
+
 import { ViewOrderComponent } from './view-order/view-order.component';
-
 const routes: Routes = [
-  {path:'',component:HomePageComponent},
-  {path:'admin', component:AdminRegistrationComponent},
-  {path:'admin-login',component:AdminLoginComponent},
-  {path:'update-doctor',component:UpdateDoctorComponent},
-  {path:'view-order',component:ViewOrderComponent},
-  {path:'delete-doctor',component:DeleteDoctorComponent},
-  {path:'order-details',component:AddDoctorComponent},
-
+  { path: '', component: HomePageComponent },
+  { path: 'view-order', component: ViewOrderComponent },
+  { path: 'order-details', component: AddDoctorComponent },
+  { path: 'admin', component: AdminLandingPageComponent }, // Removed the 'children' configuration
+  { path: 'admin/registration', component: AdminRegistrationComponent }, // Add this route
+  { path: 'admin/login', component: AdminLoginComponent }, // Add this route
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

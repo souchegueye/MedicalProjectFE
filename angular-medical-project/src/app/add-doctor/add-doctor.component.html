@@ -1,21 +1,43 @@
-<div class="col-md-6 offset-md-3">
-    <h3>Create Employee</h3>
-    <p>Create-employee works !</p>
-    
-    //ng submit is an event and we assign onSubmit event handler
+<div class="container">
+    <h2>Add Doctor</h2>
     <form (ngSubmit)="onSubmit()">
-        <div class="form-group">
-            <label>First Name</label>
-            <input type ="text" class="form-control" id = "firstName" [(ngModel)]="doctor.firstName" name="firstName" >
-        </div>
-        <div class="form-group">
-            <label>last Name</label>
-            <input type ="text" class="form-control" id = "lastName" [(ngModel)]="doctor.lastName" name="lastName">
-        </div>
-        <div class="form-group">
-            <label>Email Id</label>
-            <input type ="text" class="form-control" id = "emailId" [(ngModel)]="doctor.spec" name="emailId" >
-        </div>
-        <button class="btn btn-success" type="submit" >Submit </button>
+      <div class="form-group">
+        <label for="uname">Username:</label>
+        <input type="text" class="form-control" id="uname" [(ngModel)]="doctor.uname" name="uname" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" [(ngModel)]="doctor.pwd" name="pwd" required>
+      </div>
+      <div class="form-group">
+        <label for="specialization">Specialization:</label>
+        <input type="text" class="form-control" id="specialization" [(ngModel)]="doctor.specialization" name="specialization" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="doctor.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="fee">Fee:</label>
+        <input type="number" class="form-control" id="fee" [(ngModel)]="doctor.fee" name="fee" required>
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience:</label>
+        <input type="number" class="form-control" id="experience" [(ngModel)]="doctor.experience" name="experience" required>
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="text" class="form-control" id="gender" [(ngModel)]="doctor.gender" name="gender" required>
+      </div>
+      <div class="form-group">
+        <label for="availbleFrom">Available From:</label>
+        <input type="text" class="form-control" id="availbleFrom" [(ngModel)]="doctor.availbleFrom" name="availbleFrom" required>
+      </div>
+      <div class="form-group">
+        <label for="availbleTo">Available To:</label>
+        <input type="text" class="form-control" id="availbleTo" [(ngModel)]="doctor.availbleTo" name="availbleTo" required>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
     </form>
-    </div>
+  </div>
+  

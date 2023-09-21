@@ -4,7 +4,7 @@ import { AdminService } from '../admin.service';
 @Component({
   selector: 'app-admin-login',
   templateUrl: './admin-login.component.html',
-  styleUrls: ['./admin-login.component.css']
+  styleUrls: ['./admin-login.component.css'],
 })
 export class AdminLoginComponent {
   username: string = '';
@@ -15,8 +15,13 @@ export class AdminLoginComponent {
   loginAdmin() {
     this.adminService.login(this.username, this.password).subscribe(
       (response: any) => {
-        console.log('Admin login successful', response);
-        
+        if (response === true) {
+          console.log('Admin logged in successfully');
+          
+        } else {
+          console.error('Login failed');
+          
+        }
       },
       (error: any) => {
         console.error('Login failed', error);

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { DoctorService } from '../doctor.service';
+import { Router } from '@angular/router';
+import { Doctor } from 'doctor';
+import { DoctorService } from '../doctor.service'; 
 
 @Component({
   selector: 'app-add-doctor',
@@ -7,19 +9,18 @@ import { DoctorService } from '../doctor.service';
   styleUrls: ['./add-doctor.component.css']
 })
 export class AddDoctorComponent {
-  doctor: any = {}; 
+  doctor: Doctor = new Doctor();
 
-  constructor(private doctorService: DoctorService) {}
+  constructor(private doctorService: DoctorService, private router: Router) {}
 
-  addDoctor() {
-    this.doctorService.addDoctor(this.doctor).subscribe(data =>{
-      console.log('Doctor added successfully', response);
-      
-        
-      },
-      (error: any) => {
-        console.error('Error adding doctor', error);
-      }
-    );
+  onSubmit() {
+    this.doctorService.addDoctor(this.doctor).subscribe((data: any) => {
+      console.log(data);
+      this.goToDoctorList();
+    });
+  }
+
+  goToDoctorList() {
+    this.router.navigate(['/dr']); 
   }
 }

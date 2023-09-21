@@ -6,16 +6,17 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AdminService {
-  private apiUrl = 'http://localhost:8080'; 
+  private apiUrl = 'http://localhost:8080';
+
   constructor(private http: HttpClient) {}
 
-  register(username: string, password: string): Observable<any> {
+  register(username: string, password: string): Observable<string> {
     const adminData = { username, password };
-    return this.http.post(`${this.apiUrl}/mgr/add`, adminData);
+    return this.http.post<string>(`${this.apiUrl}/mgr/add`, adminData);
   }
 
-  login(username: string, password: string): Observable<any> {
+  login(username: string, password: string): Observable<string> {
     const adminData = { username, password };
-    return this.http.post(`${this.apiUrl}/mgr/authenticate`, adminData);
+    return this.http.post<string>(`${this.apiUrl}/mgr/authenticate`, adminData);
   }
 }
