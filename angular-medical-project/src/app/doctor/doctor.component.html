@@ -1,0 +1,18 @@
+<h1>Doctor UI</h1>
+
+<p>Login:</p>
+<input type="text" placeholder="Username" />
+<input type="password" placeholder="Password" />
+<button type="submit">Login</button>
+
+<p>Appointments:</p>
+<ul>
+  <li *ngFor="let appt of appointments">
+    {{ appt.patient }} at {{ appt.time }}
+  </li>
+</ul>
+
+<p>Add Availability:</p>
+<input type="datetime-local" placeholder="Start time" />
+<input type="datetime-local" placeholder="End time" />
+<button type="submit">Add Availability</button>

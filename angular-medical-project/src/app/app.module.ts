@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { UserRequestFormComponent } from './user-request-form/user-request-form.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ListProbableDoctorsComponent } from './list-probable-doctors/list-probable-doctors.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
@@ -37,10 +37,10 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     HomePageComponent,
     UserRequestFormComponent,
     ListProbableDoctorsComponent,
-    ListSelectedDoctorComponent
+    ListSelectedDoctorComponent,
     AddDoctorComponent,
     AdminRegistrationComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,6 +65,6 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
