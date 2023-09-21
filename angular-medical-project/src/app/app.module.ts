@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -6,7 +7,8 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { UserRequestFormComponent } from './user-request-form/user-request-form.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+
 import { ListProbableDoctorsComponent } from './list-probable-doctors/list-probable-doctors.component';
 import { MdbAccordionModule } from 'mdb-angular-ui-kit/accordion';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
@@ -25,6 +27,9 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
+import { AddDoctorComponent } from './add-doctor/add-doctor.component';
+import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { ApptResultComponent } from './appt-result/appt-result.component';
 
 @NgModule({
@@ -34,6 +39,9 @@ import { ApptResultComponent } from './appt-result/appt-result.component';
     UserRequestFormComponent,
     ListProbableDoctorsComponent,
     ListSelectedDoctorComponent,
+    AddDoctorComponent,
+    AdminRegistrationComponent,
+    AdminLoginComponent,
     ApptResultComponent
   ],
   imports: [
@@ -57,8 +65,28 @@ import { ApptResultComponent } from './appt-result/appt-result.component';
     MdbTooltipModule,
     MdbValidationModule,
     BrowserAnimationsModule,
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    MdbAccordionModule,
+    MdbCarouselModule,
+    MdbCheckboxModule,
+    MdbCollapseModule,
+    MdbDropdownModule,
+    MdbFormsModule,
+    MdbModalModule,
+    MdbPopoverModule,
+    MdbRadioModule,
+    MdbRangeModule,
+    MdbRippleModule,
+    MdbScrollspyModule,
+    MdbTabsModule,
+    MdbTooltipModule,
+    MdbValidationModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
