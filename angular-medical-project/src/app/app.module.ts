@@ -31,6 +31,8 @@ import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { ApptResultComponent } from './appt-result/appt-result.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ApptResultComponent } from './appt-result/appt-result.component';
     AddDoctorComponent,
     AdminRegistrationComponent,
     AdminLoginComponent,
-    ApptResultComponent
+    ApptResultComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
