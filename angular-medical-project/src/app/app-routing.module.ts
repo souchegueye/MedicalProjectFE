@@ -10,24 +10,30 @@ import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selecte
 
 import { ApptResultComponent } from './appt-result/appt-result.component';
 const routes: Routes = [
-  {path:'',component:HomePageComponent},
+  { path: '', component: HomePageComponent },
 
-  {path:'admin-registration', component:AdminRegistrationComponent},
-  {path:'admin-login',component:AdminLoginComponent},
-  {path:'add-doctor',component:AddDoctorComponent},
-  {path:'user-details',component:UserRequestFormComponent},
-  {path:'list-selected-doctors/:spec',component:ListProbableDoctorsComponent},
-  {path:'selectedDoctor',component:ListSelectedDoctorComponent},
-  {path:'',component:HomePageComponent},
-  {path:'user-details',component:UserRequestFormComponent},
-  {path:'list-selected-doctors/:spec',component:ListProbableDoctorsComponent},
-  {path:'selectedDoctor',component:ListSelectedDoctorComponent},
-  {path:'apptResult',component:ApptResultComponent}
+  { path: 'admin-registration', component: AdminRegistrationComponent },
+  { path: 'admin-login', component: AdminLoginComponent },
+  { path: 'add-doctor', component: AddDoctorComponent },
+  { path: 'user-details', component: UserRequestFormComponent },
+  {
+    path: 'list-selected-doctors/:spec',
+    component: ListProbableDoctorsComponent,
+  },
+  { path: 'selectedDoctor', component: ListSelectedDoctorComponent },
+  ,
+  { path: '', component: HomePageComponent },
+  { path: 'user-details', component: UserRequestFormComponent },
+  {
+    path: 'list-selected-doctors/:spec',
+    component: ListProbableDoctorsComponent,
+  },
+  { path: 'selectedDoctor', component: ListSelectedDoctorComponent },
+  { path: 'apptResult', component: ApptResultComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
-
+export class AppRoutingModule {}

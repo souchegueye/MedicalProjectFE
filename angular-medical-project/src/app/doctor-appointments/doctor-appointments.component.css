@@ -1,0 +1,46 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for appointment details */
+.appointment-details {
+  font-weight: bold;
+}
+
+/* Style for appointment status */
+.appointment-status {
+  color: #007bff; /* Blue color for "Active" status */
+}
+
+/* Style for canceled appointments */
+.appointment-status.canceled {
+  color: #dc3545; /* Red color for "Canceled" status */
+}
