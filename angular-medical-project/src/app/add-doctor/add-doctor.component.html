@@ -1,1 +1,21 @@
-<p>add-doctor works!</p>
+<div class="col-md-6 offset-md-3">
+    <h3>Create Employee</h3>
+    <p>Create-employee works !</p>
+    
+    //ng submit is an event and we assign onSubmit event handler
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>First Name</label>
+            <input type ="text" class="form-control" id = "firstName" [(ngModel)]="doctor.firstName" name="firstName" >
+        </div>
+        <div class="form-group">
+            <label>last Name</label>
+            <input type ="text" class="form-control" id = "lastName" [(ngModel)]="doctor.lastName" name="lastName">
+        </div>
+        <div class="form-group">
+            <label>Email Id</label>
+            <input type ="text" class="form-control" id = "emailId" [(ngModel)]="doctor.spec" name="emailId" >
+        </div>
+        <button class="btn btn-success" type="submit" >Submit </button>
+    </form>
+    </div>

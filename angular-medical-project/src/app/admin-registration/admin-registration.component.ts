@@ -18,11 +18,11 @@ export class AdminRegistrationComponent {
     this.adminService.register(this.username, this.password).subscribe(
       (response: any) => {
         console.log('Admin registered successfully', response);
-        // Redirect to login page or handle success as needed
+        
       },
       (error: any) => {
         console.error('Registration failed', error);
-        // Handle error messages or display them to the user
+        
       }
     );
   }
