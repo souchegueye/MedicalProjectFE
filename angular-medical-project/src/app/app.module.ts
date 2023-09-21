@@ -25,6 +25,7 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
+import { ApptResultComponent } from './appt-result/appt-result.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selecte
     HomePageComponent,
     UserRequestFormComponent,
     ListProbableDoctorsComponent,
-    ListSelectedDoctorComponent
+    ListSelectedDoctorComponent,
+    ApptResultComponent
   ],
   imports: [
     BrowserModule,

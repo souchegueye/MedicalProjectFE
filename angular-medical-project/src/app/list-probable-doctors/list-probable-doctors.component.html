@@ -1,4 +1,7 @@
 <div class="container text-center">
+    <div class="row">
+        
+  <div class="col"> 
 <div *ngFor="let doctor of listSelectedDoctors" > 
 <div class="card text-center my-3" style="width: 28rem;">
     
@@ -18,5 +21,24 @@
       <button class="btn btn-primary" (click)="selectedDoctor(doctor)">Select this Doctor</button>
     </div>
   </div>
+</div>
+</div>
+<div class="col">
+    <div class="card text-center my-3" style="width: 28rem;">
+    
+        <div class="card-body">
+          <h5 class="card-title">Details of Appt</h5>
+          <div class="list-group list-group-flush">
+            <li class="list-group-item"><b>Date of Appointment: </b> {{user.date}}</li>
+            <li class="list-group-item"><b>Mobile Number: </b> {{user.mNum}}</li>
+            <li class="list-group-item"><b>Sex: </b> {{user.gender}}</li>
+            <li class="list-group-item"><b>Symptom: </b> {{user.symptoms}}</li>
+
+          </div>
+        </div>
+        
+
+    </div>
+    </div>
 </div>
 </div>
