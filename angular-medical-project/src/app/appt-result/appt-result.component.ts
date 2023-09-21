@@ -15,7 +15,7 @@ export class ApptResultComponent {
 
   appt:AppointmentRequest = new AppointmentRequest;
   user:User = new User;
-  doctor:Doctor;  
+  doctor:Doctor = new Doctor;  
 
 ngOnInit(){
   this.appt=this.doctapptService.getSuccessAppt();
@@ -25,6 +25,5 @@ ngOnInit(){
   this.doctapptService.getDoctorById(this.appt.appt.doctorId).subscribe(data=>{
     this.doctor=data;
   })
-  this.appt.appt.date
 }
 }
