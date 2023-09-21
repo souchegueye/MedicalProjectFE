@@ -21,7 +21,6 @@ const routes: Routes = [
     component: ListProbableDoctorsComponent,
   },
   { path: 'selectedDoctor', component: ListSelectedDoctorComponent },
-  ,
   { path: '', component: HomePageComponent },
   { path: 'user-details', component: UserRequestFormComponent },
   {
