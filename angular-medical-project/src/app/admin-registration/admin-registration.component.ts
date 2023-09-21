@@ -10,8 +10,8 @@ import { Router } from '@angular/router';
 export class AdminRegistrationComponent {
   username: string = '';
   password: string = '';
-  successMessage: string = ''; // Define successMessage property
-  errorMessage: string = ''; // Define errorMessage property
+  successMessage: string = ''; 
+  errorMessage: string = ''; 
 
   constructor(private adminService: AdminService, private router: Router) {}
 
