@@ -1,0 +1,58 @@
+<div class="container text-center">
+    <div class="row">
+        <div class="col">
+            <div class="card text-center my-3" style="width: 28rem;">
+    
+                <div class="card-body">
+                  <h5 class="card-title"><b>Date of Appointment: </b> {{user.date}}</h5>
+                </div>
+                
+        
+            </div>
+            <div class="card text-center my-3" style="width: 28rem;">
+                
+                <div class="card-body">
+                  <h5 class="card-title"><b>Name: </b> {{selectedDoctor.name}}</h5>
+                </div>
+                
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Specialization: </b>{{selectedDoctor.specialization}}</li>
+                  <li class="list-group-item"><b>Fee: </b>{{selectedDoctor.fee}}</li>
+                  <li class="list-group-item"><b>Experience: </b>{{selectedDoctor.experience}}</li>
+                  <li class="list-group-item"><b>Gender: </b>{{selectedDoctor.gender}}</li>
+                  <li class="list-group-item"><b>Available From: </b>{{selectedDoctor.availableFrom}}</li>
+                <li class="list-group-item"><b>Available To: </b>{{selectedDoctor.availableTo}}</li>
+                 </ul>
+                <div class="card-body">
+                    
+                  <button class="btn btn-primary m-3" *ngFor="let time of timeStamps|slice:timeStampStart:timeStampend" (click)="setTime(time)">{{time}}</button>
+                </div>
+              </div>
+        </div>
+        <div class="col">
+            <div class="card text-center my-3" style="width: 28rem;">
+            
+                <div class="card-body">
+                  <h5 class="card-title">Details of Appt</h5>
+                  <div class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Date of Appointment: </b> {{user.date}}</li>
+                    <li class="list-group-item"><b>Mobile Number: </b> {{user.mNum}}</li>
+                    <li class="list-group-item"><b>Sex: </b> {{user.gender}}</li>
+                    <li class="list-group-item"><b>Symptom: </b> {{user.symptoms}}</li>
+                    <li class="list-group-item" *ngIf="appointment.time!=null"><b>Time: </b> {{appointment.time}}</li>
+        
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-success" *ngIf="appointment.time!=null" (click)="setAppt()">
+                        Confirm the Appointment
+                    </button>
+
+                  </div>
+                </div>
+                
+        
+            </div>
+            </div>
+    </div>
+    
+    </div>

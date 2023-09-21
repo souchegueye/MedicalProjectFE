@@ -15,6 +15,7 @@ export class AdminLoginComponent {
   loginAdmin() {
     this.adminService.login(this.username, this.password).subscribe(
       (response: any) => {
+<<<<<<< HEAD
         if (response === true) {
           console.log('Admin logged in successfully');
           
@@ -26,6 +27,14 @@ export class AdminLoginComponent {
       (error: any) => {
         console.error('Login failed', error);
        
+=======
+        console.log('Admin login successful', response);
+        
+      },
+      (error: any) => {
+        console.error('Login failed', error);
+        
+>>>>>>> main
       }
     );
   }
