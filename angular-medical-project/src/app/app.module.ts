@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -26,10 +27,10 @@ import { MdbTooltipModule } from 'mdb-angular-ui-kit/tooltip';
 import { MdbValidationModule } from 'mdb-angular-ui-kit/validation';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
-
 import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { ApptResultComponent } from './appt-result/appt-result.component';
 
 @NgModule({
   declarations: [
@@ -41,8 +42,29 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
     AddDoctorComponent,
     AdminRegistrationComponent,
     AdminLoginComponent,
+    ApptResultComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    MdbAccordionModule,
+    MdbCarouselModule,
+    MdbCheckboxModule,
+    MdbCollapseModule,
+    MdbDropdownModule,
+    MdbFormsModule,
+    MdbModalModule,
+    MdbPopoverModule,
+    MdbRadioModule,
+    MdbRangeModule,
+    MdbRippleModule,
+    MdbScrollspyModule,
+    MdbTabsModule,
+    MdbTooltipModule,
+    MdbValidationModule,
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

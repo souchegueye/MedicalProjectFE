@@ -19,6 +19,7 @@ ngOnInit(){
 }
 onSubmit(){
 console.log(this.user);
+this.doctorApptService.setUser(this.user);
 this.router.navigate([`list-selected-doctors/${this.user.symptoms}`]);
 }
 }

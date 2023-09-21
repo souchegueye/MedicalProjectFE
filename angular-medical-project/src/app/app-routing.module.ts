@@ -8,6 +8,7 @@ import { UserRequestFormComponent } from './user-request-form/user-request-form.
 import { ListProbableDoctorsComponent } from './list-probable-doctors/list-probable-doctors.component';
 import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
 
+import { ApptResultComponent } from './appt-result/appt-result.component';
 const routes: Routes = [
   {path:'',component:HomePageComponent},
 
@@ -16,7 +17,12 @@ const routes: Routes = [
   {path:'add-doctor',component:AddDoctorComponent},
   {path:'user-details',component:UserRequestFormComponent},
   {path:'list-selected-doctors/:spec',component:ListProbableDoctorsComponent},
-  {path:'selectedDoctor',component:ListSelectedDoctorComponent}
+  {path:'selectedDoctor',component:ListSelectedDoctorComponent},
+  {path:'',component:HomePageComponent},
+  {path:'user-details',component:UserRequestFormComponent},
+  {path:'list-selected-doctors/:spec',component:ListProbableDoctorsComponent},
+  {path:'selectedDoctor',component:ListSelectedDoctorComponent},
+  {path:'apptResult',component:ApptResultComponent}
 ];
 
 @NgModule({
@@ -24,3 +30,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

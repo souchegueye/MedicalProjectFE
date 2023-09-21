@@ -7,5 +7,9 @@ export class User {
     mNum:string;
     email:string;
     pHistory:string;
-    apptNum:number;    
+    apptNum:number;
+    date:string;
+    setDate(inDate:string){
+        this.date=inDate;
+    }    
 }
