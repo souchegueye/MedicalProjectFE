@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,10 +17,16 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { ApptResultComponent } from './appt-result/appt-result.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
+import { DoctorAppointmentsComponent } from './doctor-appointments/doctor-appointments.component';
+import { DoctorAddAvailabilityComponent } from './doctor-add-availability/doctor-add-availability.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DoctorLoginComponent,
+    DoctorAppointmentsComponent,
+    DoctorAddAvailabilityComponent,
     HomePageComponent,
     UserRequestFormComponent,
     ListProbableDoctorsComponent,
@@ -31,7 +36,7 @@ import { FooterComponent } from './footer/footer.component';
     AdminLoginComponent,
     ApptResultComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
