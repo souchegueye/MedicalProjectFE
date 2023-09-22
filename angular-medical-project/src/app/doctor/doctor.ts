@@ -7,7 +7,7 @@ export class Doctor {
   fee: number;
   experience: number;
   gender: string;
-  availableFrom: string;
-  availableTo: string;
+  availbleFrom: string;
+  availbleTo: string;
 
 }
