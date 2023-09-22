@@ -11,6 +11,7 @@ import { ListProbableDoctorsComponent } from './list-probable-doctors/list-proba
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 
+
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { AdminLandingPageComponent } from './admin-landing-page/admin-landing-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -22,11 +23,13 @@ import { DeleteDoctorComponent } from './delete-doctor/delete-doctor.component';
 import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 
 import { ApptResultComponent } from './appt-result/appt-result.component';
+
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
 import { DoctorAppointmentsComponent } from './doctor-appointments/doctor-appointments.component';
 import { DoctorAddAvailabilityComponent } from './doctor-add-availability/doctor-add-availability.component';
+import { ApptResultComponent } from './appt-result/appt-result.component';
 
 
 @NgModule({
