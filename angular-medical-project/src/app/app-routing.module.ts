@@ -8,9 +8,16 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { DeleteDoctorComponent } from './delete-doctor/delete-doctor.component';
 import { HomePageComponent } from './home-page/home-page.component';
+
+import { UserRequestFormComponent } from './user-request-form/user-request-form.component';
+import { ListProbableDoctorsComponent } from './list-probable-doctors/list-probable-doctors.component';
+import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
+import { ApptResultComponent } from './appt-result/appt-result.component';
+
 import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
 import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
+
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
