@@ -7,7 +7,6 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { UserRequestFormComponent } from './user-request-form/user-request-form.component';
 import { ListProbableDoctorsComponent } from './list-probable-doctors/list-probable-doctors.component';
 import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
-
 import { ApptResultComponent } from './appt-result/appt-result.component';
 const routes: Routes = [
   { path: '', component: HomePageComponent },
