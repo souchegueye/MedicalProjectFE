@@ -1,43 +1,46 @@
 <div class="container">
-    <h2>Add Doctor</h2>
-    <form (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label for="uname">Username:</label>
-        <input type="text" class="form-control" id="uname" [(ngModel)]="doctor.uname" name="uname" required>
-      </div>
-      <div class="form-group">
-        <label for="pwd">Password:</label>
-        <input type="password" class="form-control" id="pwd" [(ngModel)]="doctor.pwd" name="pwd" required>
-      </div>
-      <div class="form-group">
-        <label for="specialization">Specialization:</label>
-        <input type="text" class="form-control" id="specialization" [(ngModel)]="doctor.specialization" name="specialization" required>
-      </div>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" [(ngModel)]="doctor.name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="fee">Fee:</label>
-        <input type="number" class="form-control" id="fee" [(ngModel)]="doctor.fee" name="fee" required>
-      </div>
-      <div class="form-group">
-        <label for="experience">Experience:</label>
-        <input type="number" class="form-control" id="experience" [(ngModel)]="doctor.experience" name="experience" required>
-      </div>
-      <div class="form-group">
-        <label for="gender">Gender:</label>
-        <input type="text" class="form-control" id="gender" [(ngModel)]="doctor.gender" name="gender" required>
-      </div>
-      <div class="form-group">
-        <label for="availbleFrom">Available From:</label>
-        <input type="text" class="form-control" id="availbleFrom" [(ngModel)]="doctor.availbleFrom" name="availbleFrom" required>
-      </div>
-      <div class="form-group">
-        <label for="availbleTo">Available To:</label>
-        <input type="text" class="form-control" id="availbleTo" [(ngModel)]="doctor.availbleTo" name="availbleTo" required>
-      </div>
-      <button type="submit" class="btn btn-success">Submit</button>
-    </form>
-  </div>
-  
+  <h2>Add Doctor</h2>
+  <form (submit)="onSubmit()">
+    <div class="form-group">
+      <label for="uname">Username:</label>
+      <input type="text" id="uname" class="form-control" [(ngModel)]="doctor.uname" name="uname" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" class="form-control" [(ngModel)]="doctor.pwd" name="pwd" required>
+    </div>
+    <div class="form-group">
+      <label for="specialization">Specialization:</label>
+      <input type="text" id="specialization" class="form-control" [(ngModel)]="doctor.specialization" name="specialization" required>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" class="form-control" [(ngModel)]="doctor.name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="fee">Fee:</label>
+      <input type="number" id="fee" class="form-control" [(ngModel)]="doctor.fee" name="fee" required>
+    </div>
+    <div class="form-group">
+      <label for="experience">Experience:</label>
+      <input type="number" id="experience" class="form-control" [(ngModel)]="doctor.experience" name="experience" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" class="form-control" [(ngModel)]="doctor.gender" name="gender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="availbleFrom">Available From:</label>
+      <input type="text" id="availbleFrom" class="form-control" [(ngModel)]="doctor.availbleFrom" name="availbleFrom" required>
+    </div>
+    <div class="form-group">
+      <label for="availbleTo">Available To:</label>
+      <input type="text" id="availbleTo" class="form-control" [(ngModel)]="doctor.availbleTo" name="availbleTo" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Doctor</button>
+  </form>
+</div>

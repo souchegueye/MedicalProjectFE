@@ -3,7 +3,7 @@
   <form (ngSubmit)="registerAdmin()">
     <div class="form-group">
       <div *ngIf="successMessage" class="alert alert-success">{{ successMessage }}</div>
-  <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
+      <div *ngIf="errorMessage" class="alert alert-danger">{{ errorMessage }}</div>
       <label for="username">Username:</label>
       <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username" required>
     </div>

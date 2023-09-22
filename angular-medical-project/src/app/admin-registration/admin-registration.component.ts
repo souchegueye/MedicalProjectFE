@@ -10,24 +10,30 @@ import { Router } from '@angular/router';
 export class AdminRegistrationComponent {
   username: string = '';
   password: string = '';
-  successMessage: string = ''; 
-  errorMessage: string = ''; 
+  successMessage: string = '';
+  errorMessage: string = '';
 
   constructor(private adminService: AdminService, private router: Router) {}
-
   registerAdmin() {
     this.adminService.register(this.username, this.password).subscribe(
-      (message: string) => {
-        console.log(message);
-        this.successMessage = message;
+      (response: any) => {
+        console.log(response); 
+        if (response && response.status === 200) {
+          this.successMessage = 'Admin registered successfully';
+          this.errorMessage = '';
+        } else {
+          
+          this.successMessage = 'Registration sucessfull'; 
+        }
       },
       (error: any) => {
         console.error(error);
-        this.errorMessage = error;
+        this.errorMessage = 'Registration failed: ' + error.message;
+      
       }
     );
+    
   }
-
   goToHomePage() {
     this.router.navigate(['/']);
   }

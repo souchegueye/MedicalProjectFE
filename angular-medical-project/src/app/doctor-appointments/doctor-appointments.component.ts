@@ -1,5 +1,8 @@
 // src/app/doctor-appointments/doctor-appointments.component.ts
-import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
+import { Doctor } from '../doctor.model'; // Import the Doctor model
+
 import { DoctorAppointmentsService } from '../doctor-appointments.service';
 import { Appointment } from '../appointment.model';
 
