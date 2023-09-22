@@ -1,0 +1,29 @@
+<!-- src/app/doctor-appointments/doctor-appointments.component.html -->
+<div class="container">
+  <h2>Doctor Appointments</h2>
+  <ul>
+    <li *ngFor="let appointment of appointments" class="appointment-item">
+      <div class="appointment-details">
+        <span class="label">Patient Name:</span> {{ appointment.patientName }}
+      </div>
+      <div class="appointment-details">
+        <span class="label">Appointment Date:</span>
+        {{ appointment.appointmentDate }}
+      </div>
+      <div class="appointment-details">
+        <span class="label">Appointment Time:</span>
+        {{ appointment.appointmentTime }}
+      </div>
+      <div class="appointment-details">
+        <span class="label">Status:</span>
+        <span
+          [ngClass]="{
+            'appointment-status': true,
+            canceled: appointment.status === 'Canceled'
+          }"
+          >{{ appointment.status }}</span
+        >
+      </div>
+    </li>
+  </ul>
+</div>

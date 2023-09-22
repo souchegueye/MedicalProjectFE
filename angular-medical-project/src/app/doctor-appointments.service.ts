@@ -9,13 +9,13 @@ import { Appointment } from './appointment.model'; // Import the Appointment cla
   providedIn: 'root',
 })
 export class DoctorAppointmentsService {
-  private baseUrl = 'http://your-backend-api-url'; // Replace with your actual backend URL
+  private baseUrl = 'http://localhost:8080/appointments'; // Replace with your actual backend URL
 
   constructor(private http: HttpClient) {}
 
   getAppointmentsForDoctor(doctorId: number): Observable<Appointment[]> {
     return this.http.get<Appointment[]>(
-      `${this.baseUrl}/dr/getByType/${doctorId}`
+      `${this.baseUrl}/byDoctor/${doctorId}`
     );
   }
 }

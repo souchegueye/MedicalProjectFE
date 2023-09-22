@@ -1,4 +1,3 @@
-// src/app/doctor.model.ts
 export class Doctor {
   id: number;
   uname: string;
