@@ -14,12 +14,12 @@ import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selecte
 import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 import { AdminRegistrationComponent } from './admin-registration/admin-registration.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
-import { ApptResultComponent } from './appt-result/appt-result.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
 import { DoctorAppointmentsComponent } from './doctor-appointments/doctor-appointments.component';
 import { DoctorAddAvailabilityComponent } from './doctor-add-availability/doctor-add-availability.component';
+import { ApptResultComponent } from './appt-result/appt-result.component';
 
 @NgModule({
   declarations: [
