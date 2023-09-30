@@ -21,7 +21,7 @@ import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
 import { DeleteDoctorComponent } from './delete-doctor/delete-doctor.component';
 import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 
-import { ApptResultComponent } from './appt-result/appt-result.component';
+
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -30,6 +30,9 @@ import { DoctorAppointmentsComponent } from './doctor-appointments/doctor-appoin
 import { DoctorAddAvailabilityComponent } from './doctor-add-availability/doctor-add-availability.component';
 
 import { ApptResultComponent } from './appt-result/appt-result.component';
+import { UserRequestFormComponent } from './user-request-form/user-request-form.component';
+import { ListSelectedDoctorComponent } from './list-selected-doctor/list-selected-doctor.component';
+import { AddDoctorComponent } from './add-doctor/add-doctor.component';
 
 
 
@@ -66,10 +69,7 @@ import { ApptResultComponent } from './appt-result/appt-result.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-
     BrowserAnimationsModule,
-   
-
   ],
   providers: [],
   bootstrap: [AppComponent],

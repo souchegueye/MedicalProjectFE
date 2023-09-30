@@ -1,1 +1,44 @@
-<p>view-doctor works!</p>
+<header [headerType]="2"></header>
+<div class="container text-center">
+    <div class="row">
+
+        <div class="col">
+
+            <div class="card text-center my-3" style="width: 28rem;">
+
+                <div class="card-body">
+                    <h5 class="card-title"><b>Name: </b> {{doctor.name}}</h5>
+                </div>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Specialization: </b>{{doctor.specialization}}</li>
+                    <li class="list-group-item"><b>Fee: </b>{{doctor.fee}}</li>
+                    <li class="list-group-item"><b>Experience: </b>{{doctor.experience}}</li>
+                    <li class="list-group-item"><b>Gender: </b>{{doctor.gender}}</li>
+                    <li class="list-group-item"><b>Available From: </b>{{doctor.availableFrom}}</li>
+                    <li class="list-group-item"><b>Available To: </b>{{doctor.availableTo}}</li>
+                </ul>
+                <div class="card-body">
+                    <button class="btn btn-primary">Select this Doctor</button>
+                </div>
+            </div>
+
+        </div>
+        <div *ngFor="let appt of appointments" class="col">
+            <div class="card my-3"  style="width: 20rem;">
+      
+                <div class="card-body">
+                  <h5 class="card-title">Appointement Details</h5>
+                  <div class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Appt Number: </b>{{appt.appointmentId}}</li>
+                    <li class="list-group-item"><b>Patient's Id: </b> {{appt.userId}}</li>
+                    <li class="list-group-item"><b>Date: </b>{{appt.date | date:'mediumDate'}}</li>
+                    <li class="list-group-item"><b>Time: </b>{{appt.time}}</li>
+        
+                  </div>
+                </div>
+        </div>
+        </div>
+
+    </div>
+</div>

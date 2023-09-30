@@ -19,6 +19,7 @@ import { ApptResultComponent } from './appt-result/appt-result.component';
 import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
 import { ViewAppointmentsComponent } from './view-appointments/view-appointments.component';
 import { ViewDoctorComponent } from './view-doctor/view-doctor.component';
+import { DoctorLoginComponent } from './doctor-login/doctor-login.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -44,10 +45,11 @@ const routes: Routes = [
   { path: 'selectedDoctor', component: ListSelectedDoctorComponent },
   { path: 'apptResult', component: ApptResultComponent },
 
-  { path: 'view-doctor', component: ViewDoctorComponent },
+  { path: 'view-doctor/:id', component: ViewDoctorComponent },
   { path: 'update-doctor', component: UpdateDoctorComponent },
   { path: 'delete-doctor', component: DeleteDoctorComponent },
-  { path: 'view-appointments', component: ViewAppointmentsComponent }
+  { path: 'view-appointments', component: ViewAppointmentsComponent },
+  { path: 'doctor-login',component:DoctorLoginComponent}
 
 ];
 
