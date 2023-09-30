@@ -8,7 +8,7 @@ import { Doctor } from './doctor.model';
   providedIn: 'root',
 })
 export class DoctorAuthService {
-  private baseUrl = 'http://your-backend-api-url'; // Replace with your actual backend URL
+  private baseUrl = 'http://localhost:8080'; // Replace with your actual backend URL
 
   constructor(private http: HttpClient) {}
 

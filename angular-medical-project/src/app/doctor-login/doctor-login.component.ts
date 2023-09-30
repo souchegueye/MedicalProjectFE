@@ -16,6 +16,7 @@ export class DoctorLoginComponent {
   login() {
     this.authService.login(this.doctor).subscribe(
       (response) => {
+        console.log(response);
         if (response.success) {
         } else {
           this.loginError = true;

@@ -1,7 +1,28 @@
-<div class="dashboard-menu">
-    <a routerLink="/add-doctor">Add Doctor</a>
-    <a routerLink="/view-doctor">View Doctor</a>
-    <a routerLink="/update-doctor">Update Doctor</a>
-    <a routerLink="/delete-doctor">Delete Doctor</a>
-    <a routerLink="/view-appointments">View Appointments</a>
+<header [headerType]="2"></header>
+  <div class="container text-center">
+    <div class="row">
+        
+
+<div *ngFor="let doctor of listofDoctors" > 
+    <div class="col"> 
+<div class="card text-center my-3" style="width: 30rem;">
+    
+    <div class="card-body">
+      <h5 class="card-title"><b>Name: </b> {{doctor.name}}</h5>
+    </div>
+    
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Specialization: </b>{{doctor.specialization}}</li>
+      <li class="list-group-item"><b>Fee: </b>{{doctor.fee}}</li>
+      <li class="list-group-item"><b>Experience: </b>{{doctor.experience}}</li>
+      <li class="list-group-item"><b>Gender: </b>{{doctor.gender}}</li>
+      <li class="list-group-item"><b>Available From: </b>{{doctor.availableFrom}}</li>
+      <li class="list-group-item"><b>Available To: </b>{{doctor.availableTo}}</li>
+     </ul>
+    <div class="card-body">
+      <button class="btn btn-primary" (click)="viewDoctor(doctor.id)" >Select this Doctor</button>
+    </div>
+  </div>
+</div>
+</div>
 </div>
